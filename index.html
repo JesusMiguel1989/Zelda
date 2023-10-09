@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda TotK</title>
+    <link rel="stylesheet" href="./instalar-bp-ac/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+
+<body class="index">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-between text-light fixed-top"
+        id="navegacion" role="tablist">
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenido-nav"
+            aria-controls="contenido-nav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="./index.html" class="navbar-brand">
+            <img src="./imagenes/logo.webp" alt="Phil" loading="lazy" class="navbar-brand__img logo">
+        </a>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="contenido-nav">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./zonas2.html" class="nav-link">Zonas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./ropas.html" class="nav-link">Ropas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./poderes.html" class="nav-link">Poderes</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- form -->
+        <form action="#" class="d-flex me-3">
+            <div class="list-group list-group-horizontal">
+                <input type="text" placeholder="Buscar" class="form-control">
+                <button type="submit" class="btn buscador"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></span></button>
+            </div>
+
+        </form>
+    </nav>
+    <section class="vh-100">
+        <!-- Tarjeta Usuario -->
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+            <div class="row mx-auto">
+                <div class="col-auto border-0">
+                    <div class="card w-100 m-3 bg-transparent bg-opacity-75 text-light border-0">
+                        <div class="card w-100 mb-50 bg-transparent border-0">
+                            <div class="card-container">
+                                <div class="card-header border-0 d-flex justify-content-center">
+                                    <img src="./imagenes/download-removebg-preview.png" alt="Usuario"
+                                        class="card-img-top usu ">
+                                </div>
+                                <div class="card-body border-0">
+                                    <!-- Input -->
+                                    <div class="row mb-2">
+                                        <div class="col-5 text-center fs-5">
+                                            <label for="usuario" class="fuente">Usuario:</label>
+                                        </div>
+                                        <div class="col-7 text-center">
+                                            <input type="text" id="usuario" class="bg-transparent">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5 text-center fs-5">
+                                            <label for="contraseña" class="fuente">Contraseña:</label>
+                                        </div>
+                                        <div class="col-7 text-center">
+                                            <input type="text" id="contraseña" class="bg-transparent">
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="card-footer border-0">
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                            <button id="entrar" class="btn btn-secondary text-light">Entrar</button>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <button id="registro" class="btn btn-secondary text-light">Registrarse</button>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <button id="anonimus" class="btn btn-secondary text-light">Anónimo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- js -->
+    <script src="./instalar-bp-ac/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

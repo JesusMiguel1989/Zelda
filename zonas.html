@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda TotK</title>
+    <link rel="stylesheet" href="./instalar-bp-ac/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body class="fondo">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-between text-light " id="navegacion"
+        role="tablist">
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenido-nav"
+            aria-controls="contenido-nav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="./index.html" class="navbar-brand">
+            <img src="./imagenes/logo.webp" alt="Phil" loading="lazy" class="navbar-brand__img logo">
+        </a>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="contenido-nav">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item">
+                    <a href="./index.html" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./zonas.html" class="nav-link">Zonas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./ropas.html" class="nav-link">Ropas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./poderes.html" class="nav-link">Poderes</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- form -->
+        <form action="#" class="d-flex me-3">
+            <div class="list-group list-group-horizontal">
+                <input type="text" placeholder="Buscar" class="form-control">
+                <button type="submit" class="btn buscador"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg></span></button>
+            </div>
+
+        </form>
+
+    </nav>
+    <section id="cuerpo">
+        <div class="container">
+            <!-- Logros arriba -->
+            <div class="row justify-content-around">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6 text-center w-30">
+                            <h3 class="mt-3 p-3 bg-dark bg-opacity-50 text-light">Atalayas</h3>
+                        </div>
+                        <div class="col-6 w-25 text-center mt-3 p-4">
+                            <div class="justify-content-around">
+                                <span class="badge bg-primary rounded-pill fs-6">15</span>
+                                <span class="badge bg-success rounded-pill fs-6">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-6 text-center w-30">
+                            <h3 class="mt-3 p-3 bg-dark bg-opacity-50 text-light">Santuarios</h3>
+                        </div>
+                        <div class="col-6 w-25 text-center mt-3 p-4">
+                            <div class="justify-content-around">
+                                <span class="badge bg-primary rounded-pill fs-6">152</span>
+                                <span class="badge bg-success rounded-pill fs-6">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center align-content-center">
+            <div class="col-4 ">
+                <div class="accordion d-flex justify-content-center">
+                    <div class="card w-100 m-3 bg-dark bg-opacity-75 text-light" id="acordeon01">
+                        <!-- Boton -->
+                        <div class="card-header text-center" id="boton-collapse-1">
+                            <button class="btn text-center" data-bs-toggle="collapse" data-bs-target="#contenido-btn-1"
+                                aria-expanded="false" aria-controls="contenido-btn-1">
+                                <h4 class="text-light ps-2 pe-2 mt-2 mb-2 ">Hyrule Central</h4>
+                            </button>
+                        </div>
+
+                        <!-- contenido -->
+                        <div class="collapse" id="contenido-btn-1" aria-labelledby="boton-collapse-1"
+                            data-bs-parent="#acordeon001">
+                            <div class="card-body text-center">
+
+                                <img src="./imagenes/CentralHyrule.webp" alt="Hyrule Central" class="card-img-top">
+                                <h5 class="card-text text-center my-2">Hyrule Central</h5>
+                                <p class="card-text">Centro del territorio de Hyrule,<br>Aqui se pueden encontrar:<br>El
+                                    Castillo.</p>
+
+
+                                <h4>Atalaya <input type="checkbox"class="form-check-input" id="atalaya01"> </h4>
+
+
+                                <!-- Santuarios -->
+                                <div class="card-header text-center m-0 p-0" id="santuarios-01">
+                                    <button class="btn btn-block text-center santuarios" data-bs-toggle="collapse"
+                                        data-bs-target="#santuarios-btn-01" aria-expanded="false"
+                                        aria-controls="santuarios-btn-01">
+                                        <h4 class="text-light">Santuarios <span class="badge bg-primary rounded-pill"> 7
+                                            </span> <span class="badge bg-success rounded-pill">0</span></h4>
+                                    </button>
+
+                                    <!-- contenido santuarios -->
+                                    <div class="collapse" id="santuarios-btn-01" aria-labelledby="santuarios-01"
+                                        data-bs-parent="#acordeon001">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li class="list-unstyled">Qiononi'su &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario001"></li>
+                                                <li class="list-unstyled">Se'paa &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario002"></li>
+                                                <li class="list-unstyled">Oiami &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario003"></li>
+                                                <li class="list-unstyled">Ios'ini &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario004"></li>
+                                                <li class="list-unstyled">Susuai &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario005"></li>
+                                                <li class="list-unstyled">Iso'dag &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario006"></li>
+                                                <li class="list-unstyled">Serut'ab &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario007"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="accordion d-flex justify-content-center">
+                    <div class="card w-100 m-3 bg-dark bg-opacity-75 text-light" id="acordeon02">
+                        <!-- Boton -->
+                        <div class="card-header text-center" id="boton-collapse-2">
+                            <button class="btn btn-block text-center" data-bs-toggle="collapse"
+                                data-bs-target="#contenido-btn-2" aria-expanded="false" aria-controls="contenido-btn-2">
+                                <h4 class="text-light ps-2 pe-2 mt-2 mb-2 ">LLanura Hyrule </h4>
+                            </button>
+                        </div>
+
+                        <!-- contenido -->
+                        <div class="collapse" id="contenido-btn-2" aria-labelledby="boton-collapse-2"
+                            data-bs-parent="#acordeon02">
+                            <div class="card-body text-center">
+                                <img src="./imagenes/llanurahyrule.webp" alt="Llanura Hyrule" class="card-img-top">
+                                <h5 class="card-text text-center my-2">Llanura Central</h5>
+                                <p class="card-text">Llanura central del territorio de Hyrule.<br>Aqui se pueden
+                                    encuentra:<br>
+                                    Castillo y la base central.</p>
+                                <!-- Santuarios -->
+                                <div class="card-header text-center m-0 p-0" id="santuarios-02">
+                                    <button class="btn btn-block text-center" data-bs-toggle="collapse"
+                                        data-bs-target="#santuarios-btn-02" aria-expanded="false"
+                                        aria-controls="santuarios-btn-02">
+                                        <h4 class="text-light">Santuarios <span
+                                                class="badge bg-primary rounded-pill">10</span> <span
+                                                class="badge bg-success rounded-pill">0</span></h4>
+                                    </button>
+
+                                    <!-- contenido santuarios -->
+                                    <div class="collapse" id="santuarios-btn-02" aria-labelledby="santuarios-02"
+                                        data-bs-parent="#acordeon002">
+                                        <div class="card-body">
+                                            <ul>
+                                                <li class="list-unstyled">Maia'tinou &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario008"></li>
+                                                <li class="list-unstyled">Sutu'um &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario009"></li>
+                                                <li class="list-unstyled">Riog'oq &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario010"></li>
+                                                <li class="list-unstyled">Usat'sum &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario011"></li>
+                                                <li class="list-unstyled">Sonapanio &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario012"></li>
+                                                <li class="list-unstyled">Taraoq'un &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario013"></li>
+                                                <li class="list-unstyled">Qamiz'una &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario014"></li>
+                                                <li class="list-unstyled">Qio'quon &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario015"></li>
+                                                <li class="list-unstyled">Teni'iten &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario016"></li>
+                                                <li class="list-unstyled">Taiqa'su &nbsp<input type="checkbox"
+                                                        class="form-check-input" id="santuario017"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="accordion d-flex justify-content-center">
+                    <div class="card w-100 m-3 bg-dark bg-opacity-75 text-light" id="acordeon03">
+                        <!-- Boton -->
+                        <div class="card-header text-center" id="boton-collapse-3">
+                            <!-- Boton -->
+                            <button class="btn btn-block text-center" data-bs-toggle="collapse"
+                                data-bs-target="#contenido-btn-3" aria-expanded="false" aria-controls="contenido-btn-3">
+                                <h4 class="text-light ps-2 pe-2 mt-2 mb-2 ">Lanayru y Necluda</h4>
+                            </button>
+                        </div>
+
+                        <!-- contenido -->
+                        <div class="collapse p-3" id="contenido-btn-3" aria-labelledby="boton-collapse-3"
+                            data-bs-parent="#acordeon03">
+                            <img src="./imagenes/lanayru.jpg" alt="Lanayru" class="card-img-top">
+                            <h5 class="card-text text-center my-2">Pantano Lanayru y Necluda</h5>
+                            <p class="card-text text-center">Pantano Lanayru y Necluda Occidental.<br>Aqui se pueden
+                                encontrar:<br>
+                                El territorio Zora, monte Lanayru y Kakarico.
+                            </p>
+                            <!-- Santuarios -->
+                            <div class="card-header text-center m-0 p-0" id="santuarios-03">
+                                <button class="btn btn-block text-center" data-bs-toggle="collapse"
+                                    data-bs-target="#santuarios-btn-03" aria-expanded="false"
+                                    aria-controls="santuarios-btn-03">
+                                    <h4 class="text-light">Santuarios <span
+                                            class="badge bg-primary rounded-pill">9</span> <span
+                                            class="badge bg-success rounded-pill">0</span></h4>
+                                </button>
+
+                                <!-- contenido santuarios -->
+                                <div class="collapse" id="santuarios-btn-03" aria-labelledby="santuarios-03"
+                                    data-bs-parent="#acordeon003">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="list-unstyled">Muronoq &nbsp<input type="checkbox"
+                                                    class="form-check-input" id="santuario018"></li>
+                                            <li class="list-unstyled">Io'nasaw &nbsp<input type="checkbox"
+                                                    class="form-check-input" id="santuario019"></li>
+                                            <li class="list-unstyled">Suq'aroqu &nbsp<input type="checkbox"
+                                                    class="form-check-input" id="santuario020"></li>
+                                            <li class="list-unstyled">Ren'ise &nbsp<input type="checkbox"
+                                                    class="form-check-input" id="santuario021"></li>
+                                            <li class="list-unstyled">Maqasur &nbsp<input type="checkbox"
+                                                    class="form-check-input" id="santuario022"></li>
+                                            <li class="list-unstyled">O'ogin &nbsp<input type="checkbox"
+                                                    class="form-check-input" id="santuario023"></li>
+                                            <li class="list-unstyled">Es'hosie &nbsp<input type="checkbox"
+                                                    class="form-check-input" id="santuario024"></li>
+                                            <li class="list-unstyled">Ilion'iu &nbsp<input type="checkbox"
+                                                    class="form-check-input" id="santuario025"></li>
+                                            <li class="list-unstyled">Qura'qat &nbsp<input type="checkbox"
+                                                    class="form-check-input" id="santuario026"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-12 text-center">
+                <input type="button" class="btn btn-primary" value="Actualizar Progreso">
+            </div>
+            <!-- <img src="./img/hades.jpg" alt="Hades" class="card-img-top"> -->
+        </div>
+    </section>
+
+    <!-- js -->
+    <script src="./instalar-bp-ac/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda TotK</title>
+    <link rel="stylesheet" href="./instalar-bp-ac/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./javascript/zonas.js"></script>
+</head>
+
+<body class="fondo">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-between text-light " id="navegacion"
+        role="tablist">
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#contenido-nav"
+            aria-controls="contenido-nav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a href="./index.html" class="navbar-brand">
+            <img src="./imagenes/logo.webp" alt="Phil" loading="lazy" class="navbar-brand__img logo">
+        </a>
+
+        <div class="collapse navbar-collapse flex-grow-0" id="contenido-nav">
+            <ul class="navbar-nav ms-auto me-3">
+                <li class="nav-item">
+                    <a href="./index2.html" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./zonas2.html" class="nav-link">Zonas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./ropas2.html" class="nav-link">Ropas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./poderes2.html" class="nav-link">Poderes</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- form -->
+        <form action="#" class="d-flex me-3">
+            <div class="list-group list-group-horizontal">
+                <input type="text" placeholder="Buscar" class="form-control" id="busqueda">
+                <button type="submit" class="btn buscador" id="buscador"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></span></button>
+            </div>
+
+        </form>
+
+    </nav>
+    <section id="cuerpo">
+        <div class="container">
+            <!-- Logros arriba -->
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-8 col-md-8 text-center w-30 w-md-100">
+                            <h3 class="mt-3 p-3 bg-dark bg-opacity-50 text-light">Atalayas</h3>
+                        </div>
+                        <div class="col-4 col-md-4 w-25 text-center mt-3 p-2 p-md-2">
+                            <div class="justify-content-around">
+                                <span class="badge bg-primary rounded-pill fs-6">15</span>
+                                <span class="badge bg-success rounded-pill fs-6" id="atalayasTerminados">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-8 col-md-8 text-center w-30 w-md-100">
+                            <h3 class="mt-3 p-3 bg-dark bg-opacity-50 text-light">Santuarios</h3>
+                        </div>
+                        <div class="col-4 col-md-4 w-25 text-center mt-3 p-2 p-md-2">
+                            <div class="justify-content-around">
+                                <span class="badge bg-primary rounded-pill fs-6">152</span>
+                                <span class="badge bg-success rounded-pill fs-6" id="santuariosTerminados">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 text-center">
+            <button class="btn btn-primary" id="actualizar">Actualizar Progreso</button>
+        </div>
+         <!--<img src="./img/hades.jpg" alt="Hades" class="card-img-top"> -->
+        </div>
+    </section>
+
+    <!-- js -->
+    <script src="./instalar-bp-ac/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/buscar"></script>
+</body>
+
+</html>

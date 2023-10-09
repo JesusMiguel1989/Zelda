@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    width: 80px;
+    height: 50px;
+}
+
+.logo2 {
+    width: 80px;
+    height: 80px;
+}
+
+h5{
+    text-decoration: underline;
+    color: beige;
+}
+
+.buscador {
+    background-color: aqua;
+}
+
+.index {
+    position: relative;
+    z-index: -200;
+    background-image: url("../imagenes/portada.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fondo {
+    position: relative;
+    z-index: -200;
+    background-image: url("../imagenes/mapa2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+.ropas {
+    position: relative;
+    z-index: -200;
+    background-image: url("../imagenes/ropas.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.poderes {
+    position: relative;
+    z-index: -200;
+    background-image: url("../imagenes/Poderes.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-tabs {
+    border-bottom: transparent;
+}
+
+.armaduras{
+    width: 50%;
+    height: 50%;
+}
+ 
+.fuente{
+    font-weight: bold;
+    text-decoration: underline;
+    color: gray;
+}
+
+.usu{
+    width: 33%;
+}
+
+hr{
+    margin-right: 40px;
+}
