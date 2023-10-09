@@ -313,7 +313,7 @@ async function creacion(array, letra) {
     return divrow;
 }
 
-/* Agregar las armauras conseguidas */
+/* Agregar las armauras conseguidas  */
 async function guardarArmadura(opcion, numero, correo) {
     //console.log(root + "/php/zelda.php?opcion=" + encodeURIComponent(opcion)+"&numero=" + encodeURIComponent(numero)+"&correo=" + encodeURIComponent(correo));
     let response = await fetch(root + "/php/zelda.php?opcion=" + encodeURIComponent(opcion) + "&numero=" + encodeURIComponent(numero) + "&correo=" + encodeURIComponent(correo), {
