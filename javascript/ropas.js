@@ -362,7 +362,8 @@ window.addEventListener("load", async () => {
 
         for (let r = 0; r < input.length; r++) {
             if (input[r].checked) {
-                await guardarArmadura("guardarArmadura", r + 1, sessionStorage.getItem("usuario"));
+                //console.log(r);
+                await guardarArmadura("guardarArmadura", r +1 , sessionStorage.getItem("usuario"));
             }
         }
         location.reload();
