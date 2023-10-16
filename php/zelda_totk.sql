@@ -134,27 +134,7 @@ CREATE TABLE `registradas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Volcado de datos para la tabla `registradas`
---
-
-INSERT INTO `registradas` (`CORREO`, `COD_REGION`) VALUES
-('jes11989@hotmail.com', 2),
-('jes11989@hotmail.com', 3),
-('jes11989@hotmail.com', 4),
-('jes11989@hotmail.com', 5),
-('jes11989@hotmail.com', 6),
-('jes11989@hotmail.com', 7),
-('jes11989@hotmail.com', 8),
-('jes11989@hotmail.com', 9),
-('jes11989@hotmail.com', 10),
-('jes11989@hotmail.com', 11),
-('jes11989@hotmail.com', 12),
-('jes11989@hotmail.com', 13),
-('jes11989@hotmail.com', 14),
-('jes11989@hotmail.com', 15),
-('jes11989@hotmail.com', 16);
-
--- --------------------------------------------------------
+--------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `ropas`
@@ -311,8 +291,7 @@ INSERT INTO `ropas` (`COD_ROPA`, `Tipo`, `NOMBRE`, `PARTE`, `UBICACION`, `COD_RE
 (131, 'Calor', 'Coletero del desierto', 'CABEZA', 'Bazar Sekken', 16, 'Aumenta la resistencia al calor', 3, './imagenes/calor/desierto.png', 'Set del Desierto'),
 (132, 'Calor', 'Hombrera del desierto', 'CUERPO', 'Club secreto Gerudo', 16, 'Aumenta la resistencia al calor', 3, './imagenes/calor/desierto.png', 'Set del Desierto'),
 (133, 'Calor', 'Grebas del Desierto', 'PIERNAS', 'Club secreto Gerudo', 16, 'Aumenta la resistencia al calor', 3, './imagenes/calor/desierto.png', 'Set del Desierto'),
-(134, 'Calor', 'Diadema Zafiro ', 'CABEZA', 'Joyería ciudadela Gerudo (Riju, en la ciudadela gerudo)', 16, 'Aumenta la resistencia al calor', 4, './imagenes/calor/diadema.webp', 'Diadema Zafiro'),
-(135, 'Normal', 'Pantalones del Crepusculo', 'PIERNAS', 'Minas Akkala (subsuelo)', 8, 'Ninguna', 3, './imagenes/Ropajes/tunicaCrepusculo.png', 'Set del Crepúsculo');
+(134, 'Calor', 'Diadema Zafiro ', 'CABEZA', 'Joyería ciudadela Gerudo (Riju, en la ciudadela gerudo)', 16, 'Aumenta la resistencia al calor', 4, './imagenes/calor/diadema.webp', 'Diadema Zafiro');
 
 -- --------------------------------------------------------
 
