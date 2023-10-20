@@ -7,7 +7,7 @@
     <title>Zelda TotK</title>
     <link rel="stylesheet" href="./instalar-bp-ac/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
-
+    <script src="./javascript/poderes.js"></script>
 </head>
 
 <body class="poderes">
@@ -26,13 +26,13 @@
         <div class="collapse navbar-collapse flex-grow-0" id="contenido-nav">
             <ul class="navbar-nav ms-auto me-3">
                 <li class="nav-item">
-                    <a href="./index2.html" class="nav-link active">Inicio</a>
+                    <a href="./index.html" class="nav-link active">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./zonas2.html" class="nav-link">Zonas</a>
+                    <a href="./zonas.html" class="nav-link">Zonas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./ropas2.html" class="nav-link">Ropas</a>
+                    <a href="./ropas.html" class="nav-link">Ropas</a>
                 </li>
                 <li class="nav-item">
                     <a href="./poderes.html" class="nav-link">Poderes</a>
@@ -43,8 +43,8 @@
         <!-- form -->
         <form action="#" class="d-flex me-3">
             <div class="list-group list-group-horizontal">
-                <input type="text" placeholder="Buscar" class="form-control">
-                <button type="submit" class="btn buscador"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                <input type="text" placeholder="Buscar" class="form-control" id="busqueda">
+                <button type="submit" class="btn buscador" id="buscador"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -53,67 +53,13 @@
 
         </form>
     </nav>
-    <section>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-12 col-md-6 col-xl-4">
-                    <div
-                        class="card h-100 bg-opacity-75 w-100 border border-light border-2 bg-dark bg-opacity-75 text-light mt-5">
-                        <div class="card-body">
-                            <div class="d-flex ms-3 mb-3 ps-3">
-                                <div class="row">
-                                    <div class="col-4">
-                                        <img src="./imagenes/Poderes/mano.png" alt="Ultramano"
-                                            class="border border-secondary border-3 rounded-circle">
-                                    </div>
-                                    <div class="col-8 text-center">
-                                        <h3 class="ms-5 pt-3"><u>Ultramano</u></h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div>
-                                <h3 class="text-center">Habilidad</h3>
-                                <p class="text-center m-auto">Asir, mover y girar objetos a distancia así como fusionar
-                                    distintas piezas del entorno para crear vehículos o estructuras.</p>
-                            </div>
-                            <hr>
-                            <div>
-                                <div class="accordion d-flex justify-content-center">
-                                    <div class="card w-100 m-3 bg-secondary bg-opacity-75 text-light "
-                                        id="acordeon01">
-                                        <!-- Boton -->
-                                        <div class="card-header text-center" id="boton-collapse-1">
-                                            <button class="btn text-center" data-bs-toggle="collapse"
-                                                data-bs-target="#contenido-btn-1" aria-expanded="false"
-                                                aria-controls="contenido-btn-1">
-                                                <h4 class="text-light ps-2 pe-2 mt-2 mb-2 ">Ubiación</h4>
-                                            </button>
-
-                                            <div class="collapse" id="contenido-btn-1"
-                                                aria-labelledby="boton-collapse-1" data-bs-parent="#acordeon001">
-                                                <div class="card-body text-center">
-                                                    <hr>
-                                                    <p class="text-center">Se obtiene al entrar en el Santuario de Uqo'u como parte de la
-                                                        misión La puerta cerrada.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <h3 class="text-center">Ubicación</h3>
-                                <p class="text-center">Se obtiene al entrar en el Santuario de Uqo'u como parte de la
-                                    misión La puerta cerrada.</p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="poderes">
+        
     </section>
 
     <!-- js -->
     <script src="./instalar-bp-ac/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/buscar"></script>
 </body>
 
 </html>

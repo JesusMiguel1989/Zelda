@@ -7,7 +7,7 @@
     <title>Zelda TotK</title>
     <link rel="stylesheet" href="./instalar-bp-ac/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/index.css">
-
+    <script src="./javascript/ropas.js"></script> 
 </head>
 
 <body class="ropas">
@@ -26,10 +26,10 @@
         <div class="collapse navbar-collapse flex-grow-0" id="contenido-nav">
             <ul class="navbar-nav ms-auto me-3">
                 <li class="nav-item">
-                    <a href="./index2.html" class="nav-link active">Inicio</a>
+                    <a href="./index.html" class="nav-link active">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./zonas2.html" class="nav-link">Zonas</a>
+                    <a href="./zonas.html" class="nav-link">Zonas</a>
                 </li>
                 <li class="nav-item">
                     <a href="./ropas.html" class="nav-link">Ropas</a>
@@ -43,8 +43,8 @@
         <!-- form -->
         <form action="#" class="d-flex me-3">
             <div class="list-group list-group-horizontal">
-                <input type="text" placeholder="Buscar" class="form-control">
-                <button type="submit" class="btn buscador"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                <input type="text" placeholder="Buscar" class="form-control" id="busqueda">
+                <button type="submit" class="btn buscador" id="buscador"><span><svg xmlns="http://www.w3.org/2000/svg" width="16"
                             height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -55,98 +55,38 @@
     </nav>
     <section class="mt-5 pt-5">
         <div class="container">
+            <div class="row mb-3 p-3">
+                <div class="col-12 text-center">
+                    <button id="actualizar" class="btn btn-primary fw-bold">Guardar en el Armario</button>
+                </div>
+            </div>
             <nav class="nav nav-tabs justify-content-center " id="navigation" role="tablist">
                 <a href="#armadurasNormales" class="nav-link bg-dark text-light" data-bs-toggle="tab" role="tab"
-                    aria-selected="true" aria-controls="contenido-inicio" id="inicio-tab">Normales</a>
+                    aria-selected="false" aria-controls="contenido-inicio" id="normales-tab">Normales</a>
                 <a href="#armadurasEspeciales" class="nav-link bg-dark text-light" data-bs-toggle="tab" role="tab"
-                    aria-selected="true" aria-controls="contenido-inicio" id="inicio-tab">Especiales</a>
-                <a href="#armadurasFrio" class="nav-link bg-dark text-light" data-bs-toggle="tab" role="tab" aria-selected="true"
-                    aria-controls="contenido-inicio" id="inicio-tab">Frio</a>
-                <a href="#armadurasCalor" class="nav-link bg-dark text-light" data-bs-toggle="tab" role="tab" aria-selected="true"
-                    aria-controls="contenido-inicio" id="inicio-tab">Calor</a>
+                    aria-selected="false" aria-controls="contenido-inicio" id="especiales-tab">Especiales</a>
+                <a href="#armadurasFrio" class="nav-link bg-dark text-light" data-bs-toggle="tab" role="tab" aria-selected="false"
+                    aria-controls="contenido-inicio" id="frio-tab">Frio</a>
+                <a href="#armadurasCalor" class="nav-link bg-dark text-light" data-bs-toggle="tab" role="tab" aria-selected="false"
+                    aria-controls="contenido-inicio" id="calor-tab">Calor</a>
             </nav>
-
+            <!-- <input type="checkbox" style="visibility: hidden;" id="oculto" class="ropajesInput"> -->
             <!-- contenido -->
             <div class="tab-content bg-dark bg-opacity-75" id="armaduras">
-                <div class="tab-pane fade show " role="tab" id="armadurasNormales" aria-labelledby="inicio-tab">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="accordion d-flex justify-content-center">
-                                <div class="card w-100 m-3 bg-dark bg-opacity-75 text-light border border-light border-2" id="acordeon01">
-                                    <!-- Boton -->
-                                    <div class="card-header text-center" id="boton-collapse-1">
-                                        <button class="btn text-center" data-bs-toggle="collapse" data-bs-target="#contenido-btn-1"
-                                            aria-expanded="false" aria-controls="contenido-btn-1">
-                                            <h4 class="text-light ps-2 pe-2 mt-2 mb-2 ">Armadura Arcaica</h4>
-                                        </button>
-                                    </div>
-            
-                                    <!-- contenido -->
-                                    <div class="collapse" id="contenido-btn-1" aria-labelledby="boton-collapse-1"
-                                        data-bs-parent="#acordeon001">
-                                        <div class="card-body text-center">
-            
-                                            <img src="./imagenes/Ropajes/Arcaica.png" alt="Hyrule Central" class="card-img-top armaduras">
-                                            <h5 class="card-text text-center my-2">Armadura Arcaica</h5>
-                                            <p class="card-text">Armadura inicial de Link.<br>Concede 1 de Armadura</p>
-            
-                                            <!-- Partes -->
-                                            <div class="card-header text-center m-0 p-0" id="armadura-01">
-                                                <button class="btn btn-block text-center armadura" data-bs-toggle="collapse"
-                                                    data-bs-target="#armadura-btn-01" aria-expanded="false"
-                                                    aria-controls="armadura-btn-01">
-                                                    <h4 class="text-light">Partes <span class="badge bg-primary rounded-pill"> 2
-                                                        </span> <span class="badge bg-success rounded-pill">0</span></h4>
-                                                </button>
-            
-                                                <!-- contenido armadura -->
-                                                <div class="collapse" id="armadura-btn-01" aria-labelledby="armadura-01"
-                                                    data-bs-parent="#acordeon001">
-                                                    <div class="card-body">
-                                                        <ul>
-                                                            <li class="list-unstyled">Toga &nbsp<input type="checkbox"
-                                                                    class="form-check-input" id="santuario001"></li>
-                                                            <li class="list-unstyled">Sandalias &nbsp<input type="checkbox"
-                                                                    class="form-check-input" id="santuario002"></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-            
-                                            <!-- Conseguirlas -->
-                                            <div class="card-header text-center m-0 p-0" id="armadura-0101">
-                                                <button class="btn btn-block text-center armadura" data-bs-toggle="collapse"
-                                                    data-bs-target="#armadura-btn-0101" aria-expanded="false"
-                                                    aria-controls="armadura-btn-01">
-                                                    <h4 class="text-light">¿Donde esta?</h4>
-                                                </button>
-            
-                                                <!-- contenido armadura -->
-                                                <div class="collapse" id="armadura-btn-0101" aria-labelledby="armadura-0101"
-                                                    data-bs-parent="#acordeon00101">
-                                                    <div class="card-body">
-                                                        <ul>
-                                                            <li class="list-unstyled"><b>Toga</b><br>Cueva del estanque (Gran isla de los Albores).</li>
-                                                            <li class="list-unstyled"><b>Sandalias</b><br> Gran Isla de los Albores</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="tab-pane fade show p-3" role="tab" id="armadurasNormales" aria-labelledby="normales-tab">
+                    
                 </div>
-                <div class="tab-pane fade show" role="tab" id="armadurasEspeciales" aria-labelledby="servicio-tab">
-                    <h1 class="text-light">Especiales</h1>
+
+                <div class="tab-pane fade show p-3" role="tab" id="armadurasEspeciales" aria-labelledby="especiales-tab">
+                    
                 </div>
-                <div class="tab-pane fade show" role="tab" id="armadurasFrio" aria-labelledby="blog-tab">
-                    <h1 class="text-light">Frio</h1>
+
+                <div class="tab-pane fade show p-3" role="tab" id="armadurasFrio" aria-labelledby="frio-tab">
+                    
                 </div>
-                <div class="tab-pane fade show" role="tab" id="armadurasCalor" aria-labelledby="contacto-tab">
-                    <h1 class="text-light">Calor</h1>
+                
+                <div class="tab-pane fade show p-3" role="tab" id="armadurasCalor" aria-labelledby="calor-tab">
+                    
                 </div>
             </div>
         </div>
@@ -154,6 +94,7 @@
 
     <!-- js -->
     <script src="./instalar-bp-ac/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/buscar"></script>
 </body>
 
 </html>
